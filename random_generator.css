@@ -1,18 +1,1 @@
-<script type="text/javascript">
-function pickOne() {
-let list = document.getElementById("list").value.trim();
-let list = document.getElementById("list").value.split(",");
-let randomnum = Math.floor((Math.random() * list.length ) )
-console.log(list + randomnum);
-document.getElementById('returnedText').innerHTML = list[randomnum];
-}
-function randomize() {
-  let list = document.getElementById("list").value.trim();
-  let list = document.getElementById("list").value.split(",");
-  list.sort(function(a, b){return 0.5 - Math.random()});
-  document.getElementById('returnedText').innerHTML = list;
-}
-function clearReturnedText() {
-  document.getElementById("returnedText").innerHTML = " ";
-}
-</script>
+
